@@ -1,6 +1,5 @@
 2.2 p-value  
 
-x
 
 1.1  
 $\alpha = 1 - F_H(C_{\alpha})$  
