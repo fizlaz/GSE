@@ -1,0 +1,33 @@
+2.2 p-value  
+1.1  
+$\alpha = 1 - F_H(C_{\alpha})$  
+$1 - \alpha = F_H(C_{\alpha})$  
+$C_{\alpha} = F_H^{-1}(1- \alpha)$  
+
+1.2  
+$P(Y \geq T(X)) = 1 - F_H(T(X))$  
+  
+1.3  
+let's call $Z = F(y)$  
+$F_Z(z) = P(Z \leq z) = P(F(y) \leq z)$  
+$= P(y \leq F^{-1}(z))$  
+$=F(F^{-1}(z)) = z$  
+1.4  
+T(X) is continuous as X is continuous (any transform is continuous and random and blabla)
+
+  
+```{r,echo=FALSE}
+alpha <- seq(0,1,0.001)
+m <- 10
+f1 <- 1 - (1-alpha)^(1/m)
+f2 <- alpha/m
+f3 <- alpha
+plot(alpha,f1, t="l")
+lines(alpha,f2,col="red")
+lines(alpha,f3,col="blue")
+```
+
+Mutliple Testing  
+5.    
+$\alpha/m \leq 1 - (1 - \alpha)^{1/m}$  
+$(1 - \alpha)^{1/m} \leq 1 - \alpha/m$
