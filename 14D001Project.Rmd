@@ -1,6 +1,4 @@
 2.2 p-value  
-
-
 1.1  
 $\alpha = 1 - F_H(C_{\alpha})$  
 $1 - \alpha = F_H(C_{\alpha})$  
@@ -30,6 +28,10 @@ lines(alpha,f3,col="blue")
 ```
 
 Mutliple Testing  
-5.    
-$\alpha/m \leq 1 - (1 - \alpha)^{1/m}$  
-$(1 - \alpha)^{1/m} \leq 1 - \alpha/m$
+5.  
+$\alpha \in [0,1]; m \in \mathbb{N}^+$  
+$\frac{\alpha}{m} \leq 1 - (1 - \alpha)^{1/m}$  
+$(1 - \alpha)^{1/m} \leq 1 - \frac{\alpha}{m}$  
+$\frac{\delta}{\delta \alpha}$  
+$- \frac{1}{m} (1-a)^{\frac{1}{m}-1} \leq -\frac{1}{m}$  
+$(1-a)^{\frac{1}{m}-1} \geq 1$
