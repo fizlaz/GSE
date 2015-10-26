@@ -15,6 +15,18 @@ $=F(F^{-1}(z)) = z$
 1.4  
 T(X) is continuous as X is continuous (any transform is continuous and random and blabla)
 
+
+Mutliple Testing  
+1.  
+$P(y_i) = (1 - \alpha)$  
+Due to independence assumption - $P(A_1 \cap A_2) = P(A_1)P(A_2)$  
+$P[\cap^m_{i=1}{y_i > \alpha}] = (1 - \alpha)^m$  
+2.  
+Probability of accepting all nulls = $(1 - \alpha)^m$  
+Probability of rejecting at least one = $1 - (1 - \alpha)^m$  
+3.  
+$(1 - \alpha)^m = 1- \alpha_{overall}$  
+4.  
   
 ```{r,echo=FALSE}
 alpha <- seq(0,1,0.001)
@@ -26,8 +38,7 @@ plot(alpha,f1, t="l")
 lines(alpha,f2,col="red")
 lines(alpha,f3,col="blue")
 ```
-
-Mutliple Testing  
+  
 5.  
 $\alpha \in [0,1]; m \in \mathbb{N}^+$  
 $\frac{\alpha}{m} \leq 1 - (1 - \alpha)^{1/m}$  
