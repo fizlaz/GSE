@@ -25,7 +25,9 @@ $P[\cap^m_{i=1}{y_i > \alpha}] = (1 - \alpha)^m$
 Probability of accepting all nulls = $(1 - \alpha)^m$  
 Probability of rejecting at least one = $1 - (1 - \alpha)^m$  
 3.  
-$(1 - \alpha)^m = 1- \alpha_{overall}$  
+$(1 - \alpha)^m = 1 - \alpha_{overall}$  $/ ^{1/m}$  
+$1 - \alpha = (1 - \alpha_{overall})^{1/m}$  
+$\alpha = 1 - (1 - \alpha_{overall})^{1/m}$  
 4.  
   
 ```{r,echo=FALSE}
